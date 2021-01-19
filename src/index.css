@@ -170,6 +170,7 @@ h3 {
   justify-content: center;
   align-items: center;
   padding: 10px;
+  flex: 1;
 }
 .inner-detail {
   display: flex;
@@ -198,4 +199,38 @@ h3 {
 }
 .inner-detail-text {
   text-align: left;
+}
+
+@media (max-width: 400px) {
+  .glass {
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .dashboard {
+    max-width: 350px;
+    flex-direction: row;
+    margin: 0px 10px;
+  }
+  .detail-container {
+    max-width: 390px;
+  }
+  .detail-description {
+    max-width: 330px;
+  }
+  .circle1,
+  .circle2 {
+    display: none;
+  }
+  .inner-detail-container {
+    max-width: 390px;
+  }
+  .inner-detail {
+    max-width: 350px;
+  }
+  .inner-detail-description {
+    max-width: 350px;
+  }
 }

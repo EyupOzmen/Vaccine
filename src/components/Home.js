@@ -1,4 +1,5 @@
 import React from "react";
+import { withRouter } from "react-router-dom";
 
 import VaccineCard from "./VaccineCard";
 import vaccines from "../assets/vaccines.jpg";
@@ -27,4 +28,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default withRouter(Home);

@@ -4,6 +4,7 @@ import {
   useHistory,
   useLocation,
   useRouteMatch,
+  withRouter,
 } from "react-router-dom";
 
 import { details } from "../data/detail";
@@ -98,4 +99,4 @@ const Detail = () => {
   );
 };
 
-export default Detail;
+export default withRouter(Detail);

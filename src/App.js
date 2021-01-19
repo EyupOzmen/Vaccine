@@ -7,9 +7,9 @@ import Detail from "./components/Detail";
 
 const App = () => {
   return (
-    <main className="main-container">
-      <section className="glass">
-        <Router>
+    <Router>
+      <main className="main-container">
+        <section className="glass">
           <Switch>
             <Route path="/vaccine/:name/details/:id">
               <Detail />
@@ -21,11 +21,11 @@ const App = () => {
               <Home />
             </Route>
           </Switch>
-        </Router>
-      </section>
-      <div className="circle1"></div>
-      <div className="circle2"></div>
-    </main>
+        </section>
+        <div className="circle1"></div>
+        <div className="circle2"></div>
+      </main>
+    </Router>
   );
 };
 
