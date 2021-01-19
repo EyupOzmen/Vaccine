@@ -201,7 +201,7 @@ h3 {
   text-align: left;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 600px) {
   .glass {
     min-width: 350px;
     display: flex;
