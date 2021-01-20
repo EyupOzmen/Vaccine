@@ -1,6 +1,6 @@
 import React from "react";
-import { withRouter } from "react-router-dom";
 
+import DynamicScrollToTop from "./ScrollToTopController";
 import VaccineCard from "./VaccineCard";
 import vaccines from "../assets/vaccines.jpg";
 import { data } from "../data/data";
@@ -8,6 +8,7 @@ import { data } from "../data/data";
 const Home = () => {
   return (
     <>
+      <DynamicScrollToTop />
       <div className="dashboard">
         {data.map((vaccine) => {
           const { id, src, name } = vaccine;
@@ -28,4 +29,4 @@ const Home = () => {
   );
 };
 
-export default withRouter(Home);
+export default Home;

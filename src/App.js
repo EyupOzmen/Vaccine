@@ -1,18 +1,24 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 
+import DynamicScrollToTop from "./components/ScrollToTopController";
 import Home from "./components/Home";
 import Vaccine from "./components/Vaccine";
 import Detail from "./components/Detail";
+import Nested from "./components/Nested";
 
 const App = () => {
   return (
-    <Router>
+    <>
+      <DynamicScrollToTop />
       <main className="main-container">
         <section className="glass">
           <Switch>
             <Route path="/vaccine/:name/details/:id">
               <Detail />
+            </Route>
+            <Route path="/vaccine/:name/brand/:brand">
+              <Nested />
             </Route>
             <Route path="/vaccine/:name">
               <Vaccine />
@@ -25,7 +31,7 @@ const App = () => {
         <div className="circle1"></div>
         <div className="circle2"></div>
       </main>
-    </Router>
+    </>
   );
 };
 

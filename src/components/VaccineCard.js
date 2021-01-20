@@ -1,6 +1,6 @@
 import React from "react";
 
-import { withRouter, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const VaccineCard = ({ id, src, name }) => {
   return (
@@ -15,4 +15,4 @@ const VaccineCard = ({ id, src, name }) => {
   );
 };
 
-export default withRouter(VaccineCard);
+export default VaccineCard;
